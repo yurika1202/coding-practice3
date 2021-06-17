@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+/* media-query
+------------------------------------------- */
+$break-points: (
+    'md': "(min-width: 768px) and (max-width: 1023px)",
+    'lg': "(min-width: 1024px)",
+) !default;
+
+@mixin mq($break-point: lg) {
+    @media #{map-get($break-points, $break-point)} {
+      @content;
+    }
+}
