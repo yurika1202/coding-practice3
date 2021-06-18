@@ -39,7 +39,7 @@ a {
 }
 
 .btn {
-    display: inline-block;
+    display: block;
     width: 30rem;
     padding: 1.8rem 0 2.2rem;
     border-radius: 999px;
@@ -61,8 +61,16 @@ a {
     }
 
     &._sp-btn {
-        margin-top: 2.4rem;
         width: 100%;
         max-width: 30rem;
+        margin: 0 auto;
+    }
+
+    &._mt24 {
+        margin-top: 2.4rem;
+    }
+
+    &._mt32 {
+        margin-top: 3.2rem;
     }
 }
