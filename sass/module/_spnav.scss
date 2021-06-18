@@ -6,6 +6,7 @@
 .open__nav {
     width: 100%;
     height: 100vh;
+    overflow-y: scroll;
     background: global.$color-bg_pl;
     position: fixed;
     top: 5.2rem;
@@ -24,7 +25,7 @@
 }
 
 .nav__items {
-    width: calc(247 / 300 * 100%);
+    width: calc(250 / 300 * 100%);
     margin: 0 auto;
 }
 
@@ -57,32 +58,5 @@
 }
 
 .spnav__btn {
-    margin-top: 6.2rem;
-}
-
-.btn {
-    display: inline-block;
-    width: 30rem;
-    padding: 1.8rem 0 2.2rem;
-    border-radius: 999px;
-    border: 2px solid global.$color-main;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.24);
-    text-align: center;
-    font-size: 1.8rem;
-    font-weight: 700;
-    line-height: 1;
-
-    &._pl {
-        background: global.$color-main;
-        color: global.$color-text_wh;
-    }
-
-    &._wh {
-        background: global.$color-bg;
-        color: global.$color-text_pl;
-    }
-
-    &._sp-btn {
-        margin-top: 2.4rem;
-    }
+    margin-top: 3.8rem;
 }
