@@ -8,6 +8,7 @@
     height: 5.2rem;
     background: global.$color-bg;
     position: fixed;
+    z-index: 100;
 }
 
 ._header-inner {
