@@ -3,3 +3,84 @@
 
 /* header
 --------------------------- */
+.header {
+    width: 100%;
+    height: 5.2rem;
+    background: global.$color-bg;
+    position: fixed;
+}
+
+._header-inner {
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sp__nav_btn {
+    width: 2.1rem;
+    height: 3.3rem;
+    background: none;
+    border: none;
+    padding: 0;
+    position: relative;
+    z-index: 110;
+
+    span {
+        width: 2.1rem;
+        height: 0.3rem;
+        background: global.$color-text_pl;
+        border-radius: 5px;
+        position: absolute;
+        right: 0;
+        transition: .5s;
+
+        &:nth-of-type(1) {
+            top: 1.2rem;
+        }
+
+        &:nth-of-type(2) {
+            width: 1.313rem;
+            height: 0.35rem;
+            top: 2.1rem;
+        }
+
+        &:nth-of-type(3) {
+            bottom: 0;
+        }
+    }
+
+    &._open {
+        span {
+            &:nth-of-type(1) {
+                top: 1.6rem;
+                transform: rotate(45deg);
+            }
+    
+            &:nth-of-type(2) {
+                opacity: 0;
+            }
+    
+            &:nth-of-type(3) {
+                top: 1.6rem;
+                transform: rotate(-45deg);
+            }
+        }
+    }
+}
+
+.nav__btn_text {
+    font: 700 0.6rem/1 global.$font-family-awesome_jp;
+    -webkit-transform: scale(0.6);
+    -webkit-transform-origin:0 0;
+    color: global.$color-text_pl;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    position: absolute;
+    top: 0;
+    transition: .4s;
+
+    &._open {
+        opacity: 0;
+    }
+}
