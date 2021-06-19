@@ -3,3 +3,72 @@
 
 /* footer
 --------------------------- */
+.footer {
+    background: global.$color-bg_footer;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.footer__share_title {
+    font: 700 1.8rem global.$font-family-awesome_en; 
+    color: global.$color-text_wh;  
+}
+
+.share-icon__lists {
+    margin-top: 1.2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.share-icon__list {
+    &:not(:first-child) {
+        margin-left: 1.8rem;
+    }
+}
+
+.btn_share {
+    width: 2.4rem;
+    height: 2.4rem;
+}
+
+.footer__wrapper {
+    margin-top: 3.2rem;
+}
+
+.footer__logo {
+    display: inline-block;
+    font: 900 2.4rem global.$font-family-awesome_en;
+    color: global.$color-text_wh;
+    letter-spacing: 0.03em;
+    line-height: 1;
+}
+
+.footer__nav_lists {
+    margin-top: 1.4rem;
+}
+
+.footer__nav_list {
+    &:not(:first-child) {
+        margin-top: .8rem;
+    }
+
+    a {
+        color: global.$color-text_wh;
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
+}
+
+.footer__copy {
+    margin-top: 2.8rem;
+}
+
+.copy, .credit {
+    display: block;
+    font-size: 1rem;
+    color: global.$color-text_wh;
+}
+
+.credit {
+    margin-top: 1rem;
+}
