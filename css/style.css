@@ -287,6 +287,20 @@ a {
 
 /* global-nav
 --------------------------- */
+/* trial
+--------------------------- */
+.trial__contents {
+  background: #2D2D32;
+  padding: 4rem 0;
+}
+
+.trial__text {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #FFF;
+  text-align: center;
+}
+
 /* fv
 --------------------------------- */
 .fv__contents {

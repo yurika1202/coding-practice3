@@ -1,0 +1,16 @@
+@charset "utf-8";
+@use "../global" as global;
+
+/* trial
+--------------------------- */
+.trial__contents {
+    background: global.$color-bg_bk;
+    padding: 4rem 0;
+}
+
+.trial__text {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: global.$color-text_wh;
+    text-align: center;
+}
