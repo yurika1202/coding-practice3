@@ -349,7 +349,7 @@ a {
 }
 
 .feature__list {
-  counter-increment: number;
+  counter-increment: number_feature;
 }
 .feature__list:not(:first-child) {
   margin-top: 6rem;
@@ -373,7 +373,7 @@ a {
   font-weight: 700;
 }
 .feature__list_title::before {
-  content: counter(number, decimal-leading-zero);
+  content: counter(number_feature, decimal-leading-zero);
   font: 4.2rem/1 "Hind", sans-serif;
   color: #64629D;
   letter-spacing: 0.1em;
@@ -409,5 +409,58 @@ a {
 }
 .users_item:not(:nth-child(4n)) {
   margin-right: 1.1rem;
+}
+
+/* flow
+--------------------------------- */
+.flow {
+  background: #F9F9F9;
+  padding: 6rem 0;
+}
+
+.flow__lists {
+  margin-top: 6.4rem;
+}
+
+.flow__list {
+  counter-increment: number_flow;
+}
+.flow__list:not(:first-child) {
+  margin-top: 8.4rem;
+}
+
+.flow__list_img {
+  background: #EDECFC;
+  border-radius: 30px;
+  padding: 2.249rem 6.8rem 2.045rem;
+  position: relative;
+}
+.flow__list_img img {
+  margin: 0 auto;
+}
+.flow__list_img::before {
+  content: counter(number_flow, decimal-leading-zero);
+  font: 4.2rem/1 "Hind", sans-serif;
+  color: #64629D;
+  letter-spacing: 0.1em;
+  position: absolute;
+  top: -2rem;
+  left: 0;
+}
+
+.flow__list_text {
+  margin-top: 1.6rem;
+}
+
+.flow__list_title {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+}
+
+.flow__list_message {
+  margin-top: 0.8rem;
+  line-height: 1.8;
 }
 /*# sourceMappingURL=style.css.map */
