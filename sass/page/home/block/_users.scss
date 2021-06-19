@@ -1,0 +1,24 @@
+@charset "UTF-8";
+@use "../../../global" as global;
+
+/* users
+--------------------------------- */
+.users {
+    padding: 6rem 0;
+}
+
+.users__items {
+    margin-top: 2.4rem;
+    margin-bottom: -1.249rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.users_item {
+    width: calc(100% / 4 - 1.1rem * 3 / 4);
+    margin-bottom: 1.249rem;
+
+    &:not(:nth-child(4n)) {
+        margin-right: 1.1rem;
+    }
+}

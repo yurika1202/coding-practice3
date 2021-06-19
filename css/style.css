@@ -386,4 +386,28 @@ a {
   margin-top: 0.8rem;
   font-size: 1.4rem;
 }
+
+/* users
+--------------------------------- */
+.users {
+  padding: 6rem 0;
+}
+
+.users__items {
+  margin-top: 2.4rem;
+  margin-bottom: -1.249rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.users_item {
+  width: calc(100% / 4 - 1.1rem * 3 / 4);
+  margin-bottom: 1.249rem;
+}
+.users_item:not(:nth-child(4n)) {
+  margin-right: 1.1rem;
+}
 /*# sourceMappingURL=style.css.map */
