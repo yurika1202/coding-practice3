@@ -111,11 +111,32 @@ a {
   max-width: 30rem;
   margin: 0 auto;
 }
-.btn._mt24 {
+.btn._nav-filebtn, .btn._about-btn, .btn._trial-btn {
   margin-top: 2.4rem;
 }
-.btn._mt32 {
+.btn._fv-btn {
   margin-top: 3.2rem;
+}
+
+.plan__btn {
+  display: block;
+  width: 100%;
+  padding: 1.3rem 1.9rem;
+  border-radius: 999px;
+  text-align: center;
+  font-weight: 700;
+  line-height: 1;
+}
+.plan__btn._plan-wh {
+  border: 2px solid #2D2D32;
+  background: #FFF;
+  margin-top: 1.9rem;
+}
+.plan__btn._plan-pl {
+  border: 2px solid #FFF;
+  background: #64629D;
+  color: #FFF;
+  margin-top: 1.9rem;
 }
 
 .section-title {
@@ -462,5 +483,184 @@ a {
 .flow__list_message {
   margin-top: 0.8rem;
   line-height: 1.8;
+}
+
+/* price
+--------------------------------- */
+.price {
+  padding: 6rem 0 6.9rem;
+}
+
+.price__table_scroll {
+  overflow-x: scroll;
+  white-space: nowrap;
+}
+
+.price__table {
+  margin-top: 4rem;
+}
+.price__table tr th:nth-of-type(3) {
+  padding: 10rem;
+}
+
+._odd {
+  background: #EDECFC;
+}
+
+._odd td, ._even td {
+  width: 18rem;
+  height: 4.2rem;
+  padding: 1.4rem 1.8rem 1.3rem;
+  font-size: 1.5rem;
+  line-height: 1;
+}
+._odd td:not(:first-of-type), ._even td:not(:first-of-type) {
+  text-align: center;
+}
+
+._bg-bk {
+  background: #2D2D32;
+  padding: 2.8rem 0.7rem;
+  text-align: center;
+}
+
+._bg-pl {
+  width: 21.6rem;
+  -webkit-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.6);
+          box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.6);
+  position: relative;
+}
+
+.table__inner {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: block;
+  padding: 2.8rem 2.5rem;
+  background: #64629D;
+  width: 21.6rem;
+}
+
+.plan__title {
+  color: #FFF;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.plan__title_pl {
+  color: #FFF;
+  font-size: 2.4rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.plan__price {
+  margin-top: 1.1rem;
+  color: #FFF;
+  font-size: 1.2rem;
+}
+.plan__price span {
+  font-size: 3rem;
+  font-weight: bold;
+  padding: 0 0.4rem;
+}
+
+.plan__price_pl {
+  margin-top: 1.1rem;
+  color: #FFF;
+  font-size: 1.8rem;
+}
+.plan__price_pl span {
+  font-size: 3.6rem;
+  font-weight: bold;
+  padding: 0 0.4rem;
+}
+
+/* question
+--------------------------------- */
+.question {
+  background: #F9F9F9;
+  padding: 6rem 0 7.2rem;
+}
+
+.question__container {
+  margin-top: 4rem;
+}
+
+.question__wrapper:not(:first-child) {
+  margin-top: 2.4rem;
+}
+
+.question__summary {
+  list-style: none;
+  cursor: pointer;
+  background: #64629D;
+  padding: 1rem 1.5rem;
+  border-radius: 4px;
+}
+
+.question__summary::-webkit-details-marker {
+  display: none;
+}
+
+.question__title {
+  color: #FFF;
+  font-weight: 700;
+  padding-left: 3.2rem;
+  position: relative;
+}
+.question__title::before {
+  content: "Q";
+  font-size: 2.2rem;
+  color: #FFF;
+  font-weight: 700;
+  line-height: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.question__answer {
+  background: #FFF;
+  padding: 1.2rem 1.6rem;
+  border-radius: 4px;
+  margin-top: 1.6rem;
+}
+
+.answer__text {
+  padding-left: 2.6rem;
+  position: relative;
+}
+.answer__text::before {
+  content: "A";
+  font-weight: 700;
+  line-height: 1;
+  font-size: 2.2rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.question__wrapper[open] .question__answer {
+  -webkit-animation: fadein 0.5s ease;
+          animation: fadein 0.5s ease;
+}
+
+@-webkit-keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 /*# sourceMappingURL=style.css.map */

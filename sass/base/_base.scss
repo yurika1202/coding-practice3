@@ -80,12 +80,35 @@ a {
         margin: 0 auto;
     }
 
-    &._mt24 {
+    &._nav-filebtn, &._about-btn, &._trial-btn {
         margin-top: 2.4rem;
     }
 
-    &._mt32 {
+    &._fv-btn {
         margin-top: 3.2rem;
+    }
+}
+
+.plan__btn {
+    display: block;
+    width: 100%;
+    padding: 1.3rem 1.9rem;
+    border-radius: 999px;
+    text-align: center;
+    font-weight: 700;
+    line-height: 1;
+
+    &._plan-wh {
+        border: 2px solid global.$color-text_bk;
+        background: global.$color-bg;
+        margin-top: 1.9rem;
+    }
+
+    &._plan-pl {
+        border: 2px solid global.$color-text_wh;
+        background: global.$color-main;
+        color: global.$color-text_wh;
+        margin-top: 1.9rem;
     }
 }
 
