@@ -121,7 +121,7 @@ a {
 .plan__btn {
   display: block;
   width: 100%;
-  padding: 1.3rem 1.9rem;
+  padding: 1.3rem 0;
   border-radius: 999px;
   text-align: center;
   font-weight: 700;
@@ -137,6 +137,18 @@ a {
   background: #64629D;
   color: #FFF;
   margin-top: 1.9rem;
+}
+
+.btn-area__btn_wh {
+  border: 2px solid #2D2D32;
+  background: #FFF;
+  margin-top: 0;
+}
+
+.btn-area__btn_pl {
+  border: 2px solid #64629D;
+  background: #64629D;
+  color: #FFF;
 }
 
 .section-title {
@@ -566,10 +578,20 @@ a {
 }
 
 .price__table {
-  margin-top: 4rem;
+  margin-top: 7rem;
+  width: 72.7rem;
 }
-.price__table tr th:nth-of-type(3) {
-  padding: 10rem;
+.price__table td:nth-child(1), .price__table th:nth-child(1) {
+  width: 15.1rem;
+}
+.price__table td:nth-child(2), .price__table th:nth-child(2) {
+  width: 18rem;
+}
+.price__table td:nth-child(3), .price__table th:nth-child(3) {
+  width: 21.6rem;
+}
+.price__table td:nth-child(4), .price__table th:nth-child(4) {
+  width: 18rem;
 }
 
 ._odd {
@@ -577,37 +599,41 @@ a {
 }
 
 ._odd td, ._even td {
-  width: 18rem;
   height: 4.2rem;
-  padding: 1.4rem 1.8rem 1.3rem;
+  padding: 1.1rem 0 1.3rem 1.8rem;
   font-size: 1.5rem;
   line-height: 1;
 }
 ._odd td:not(:first-of-type), ._even td:not(:first-of-type) {
   text-align: center;
 }
+._odd td:nth-child(3), ._even td:nth-child(3) {
+  font-size: 2rem;
+  font-weight: 700;
+}
 
 ._bg-bk {
   background: #2D2D32;
-  padding: 2.8rem 0.7rem;
+  padding: 2.2rem 0.7rem;
   text-align: center;
 }
 
 ._bg-pl {
-  width: 21.6rem;
-  -webkit-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.6);
-          box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.6);
+  padding: 2.8rem 2.5rem;
   position: relative;
 }
 
 .table__inner {
+  width: 21.6rem;
+  height: 23.2rem;
   position: absolute;
   left: 0;
   bottom: 0;
   display: block;
   padding: 2.8rem 2.5rem;
   background: #64629D;
-  width: 21.6rem;
+  -webkit-box-shadow: 0px -2px 15px rgba(0, 0, 0, 0.6);
+          box-shadow: 0px -2px 15px rgba(0, 0, 0, 0.6);
 }
 
 .plan__title {
@@ -643,6 +669,13 @@ a {
   font-size: 3.6rem;
   font-weight: bold;
   padding: 0 0.4rem;
+}
+
+._btn-area td {
+  padding: 0.9rem 0.7rem;
+}
+._btn-area td:nth-child(3) {
+  padding: 0.9rem 2.5rem;
 }
 
 /* question

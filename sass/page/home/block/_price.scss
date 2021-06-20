@@ -13,15 +13,25 @@
 }
 
 .price__table {
-    margin-top: 4rem;
+    margin-top: 7rem;
+    width: 72.7rem;
 
-    tr {
-        th {
-            &:nth-of-type(3) {
-                padding: 10rem;
+    td, th {
+        &:nth-child(1) {
+            width: 15.1rem;
+        }
 
-            }
-        }   
+        &:nth-child(2) {
+            width: 18rem;
+        }
+
+        &:nth-child(3) {
+            width: 21.6rem;
+        }
+
+        &:nth-child(4) {
+            width: 18rem;
+        }
     }
 }
 
@@ -31,38 +41,43 @@
 
 ._odd, ._even {
     td {
-        width: 18rem;
         height: 4.2rem;
-        padding: 1.4rem 1.8rem 1.3rem;
+        padding: 1.1rem 0 1.3rem 1.8rem;
         font-size: 1.5rem;
         line-height: 1;
 
         &:not(:first-of-type) {
             text-align: center;
         }
+
+        &:nth-child(3) {
+            font-size: 2rem;
+            font-weight: 700;
+        }
     }
 }
 
 ._bg-bk {
     background: global.$color-bg_bk;
-    padding: 2.8rem .7rem;
+    padding: 2.2rem .7rem;
     text-align: center;
 }
 
 ._bg-pl {
-    width: 21.6rem;
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.6);
+    padding: 2.8rem 2.5rem;
     position: relative;
 }
 
 .table__inner {
+    width: 21.6rem;
+    height: 23.2rem;
     position: absolute;
-  left: 0;
-  bottom: 0;
-  display: block;
-  padding: 2.8rem 2.5rem;
-  background: global.$color-main;
-  width: 21.6rem;
+    left: 0;
+    bottom: 0;
+    display: block;
+    padding: 2.8rem 2.5rem;
+    background: global.$color-main;
+    box-shadow: 0px -2px 15px rgba(0, 0, 0, 0.6);
 }
 
 .plan__title {
@@ -99,5 +114,15 @@
         font-size: 3.6rem;
         font-weight: bold;
         padding: 0 .4rem;
+    }
+}
+
+._btn-area {
+    td {
+        padding: .9rem .7rem;
+
+        &:nth-child(3) {
+            padding: .9rem 2.5rem;
+        }
     }
 }
