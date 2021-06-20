@@ -86,6 +86,10 @@ a {
 
     &._fv-btn {
         margin-top: 3.2rem;
+
+        @include global.mq(md) {
+            margin-top: 0;
+        }
     }
 }
 

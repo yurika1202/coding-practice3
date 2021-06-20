@@ -24,4 +24,8 @@
 
 .fv__btn {
     text-align: center;
+
+    @include global.mq(md) {
+        display: flex;
+    }
 }

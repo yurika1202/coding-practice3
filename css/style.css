@@ -117,6 +117,11 @@ a {
 .btn._fv-btn {
   margin-top: 3.2rem;
 }
+@media (min-width: 768px) and (max-width: 1023px) {
+  .btn._fv-btn {
+    margin-top: 0;
+  }
+}
 
 .plan__btn {
   display: block;
@@ -427,6 +432,13 @@ a {
 .fv__btn {
   text-align: center;
 }
+@media (min-width: 768px) and (max-width: 1023px) {
+  .fv__btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
 
 /* about
 ---------------------------------- */
@@ -582,16 +594,21 @@ a {
   width: 72.7rem;
 }
 .price__table td:nth-child(1), .price__table th:nth-child(1) {
-  width: 15.1rem;
+  width: calc(151 / 727 * 100%);
 }
 .price__table td:nth-child(2), .price__table th:nth-child(2) {
-  width: 18rem;
+  width: calc(180 / 727 * 100%);
 }
 .price__table td:nth-child(3), .price__table th:nth-child(3) {
-  width: 21.6rem;
+  width: calc(216 / 727 * 100%);
 }
 .price__table td:nth-child(4), .price__table th:nth-child(4) {
-  width: 18rem;
+  width: calc(180 / 727 * 100%);
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .price__table {
+    width: 100%;
+  }
 }
 
 ._odd {
@@ -624,7 +641,7 @@ a {
 }
 
 .table__inner {
-  width: 21.6rem;
+  width: 100%;
   height: 23.2rem;
   position: absolute;
   left: 0;
