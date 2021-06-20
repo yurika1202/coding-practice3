@@ -1,2 +1,27 @@
 @charset "UTF-8";
 @use "../../../global" as global;
+
+/* fv
+--------------------------------- */
+.fv__contents {
+    background: global.$color-bg_pl;
+    padding: 11.2rem 0 6rem;
+}
+
+.fv__text_title {
+    font-size: 8vw;
+    font-weight: 700;
+}
+
+.fv__text_lead {
+    margin-top: 1.6rem;
+}
+
+.fv__img {
+    width: calc(305 / 335 * 100%); 
+    margin: -1.6rem auto;
+}
+
+.fv__btn {
+    text-align: center;
+}

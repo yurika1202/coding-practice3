@@ -1,2 +1,13 @@
 @charset "UTF-8";
 @use "../../../global" as global;
+
+/* about
+---------------------------------- */
+.about {
+    padding: 8rem 0 6rem;
+}
+
+.about__text {
+    margin-top: 2.4rem;
+    text-align: center;
+}

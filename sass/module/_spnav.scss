@@ -3,3 +3,60 @@
 
 /* sp-nav
 --------------------------- */
+.open__nav {
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+    background: global.$color-bg_pl;
+    position: fixed;
+    top: 5.2rem;
+    right: -200%;
+    z-index: 100;
+    transition: .5s;
+
+    &.__panel-active {
+        right: 0;    
+    }
+}
+
+.nav__wrapper {
+    width: calc(300 / 375 * 100%);
+    margin: 8rem auto;
+}
+
+.nav__items {
+    width: calc(250 / 300 * 100%);
+    margin: 0 auto;
+}
+
+.nav__item {
+    padding-left: 4rem;
+    position: relative;
+
+    &::before {
+        content: '';
+        width: 1.8rem;
+        height: 1.8rem;
+        border: .2rem solid global.$color-text_pl;
+        border-radius: 1px;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%) rotate(45deg);
+    }
+
+    &:not(:first-child) {
+        margin-top: 4rem;
+    }
+
+    a {
+        font-size: 2.4rem;
+        font-weight: 700;
+        line-height: 1;
+        letter-spacing: 0.03em;
+    }
+}
+
+.spnav__btn {
+    margin-top: 6.2rem;
+}

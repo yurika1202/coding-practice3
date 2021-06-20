@@ -1,0 +1,55 @@
+@charset "UTF-8";
+@use "../../../global" as global;
+
+/* feature
+--------------------------------- */
+.feature {
+    background: global.$color-bg_gy;
+    padding: 6rem 0;
+}
+
+.feature__lists {
+    margin-top: 4rem;
+}
+
+.feature__list {
+    counter-increment: number_feature;
+
+    &:not(:first-child) {
+        margin-top: 6rem;
+    }
+}
+
+.feature__list_img {
+    width: calc(280 / 335 * 100%);
+    margin: 0 auto -9rem;
+}
+
+.feature__list_text {
+    padding: 4.9rem 2rem 4rem;
+    background: global.$color-bg;
+    border-radius: 20px;
+
+}
+
+.feature__list_title {
+    padding-top: 4.2rem;
+    position: relative;
+    font-size: 2.2rem;
+    font-weight: 700;
+
+    &::before {
+        content: counter(number_feature, decimal-leading-zero);
+        font: 4.2rem/1 global.$font-family-awesome_en;
+        color: global.$color-text_pl;
+        letter-spacing: 0.1em;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
+
+.feature__list_message {
+    margin-top: .8rem;
+    font-size: 1.4rem;
+}
