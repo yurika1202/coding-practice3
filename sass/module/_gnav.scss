@@ -3,3 +3,29 @@
 
 /* global-nav
 --------------------------- */
+.gnav__wrapper {
+    display: none;
+
+    @include global.mq(lg) {
+        display: flex;
+    }
+}
+
+.nav__items {
+    display: flex;
+}
+
+.nav__item {
+    display: flex;
+    align-items: center;
+
+    &:not(:first-child) {
+        margin-left: 1.6rem;
+    }
+
+    a {
+        font-size: 1.4rem;
+        font-weight: 700;
+        letter-spacing: 0.03em;
+    }
+}

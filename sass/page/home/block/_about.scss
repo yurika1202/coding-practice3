@@ -5,9 +5,18 @@
 ---------------------------------- */
 .about {
     padding: 8rem 0 6rem;
+
+    @include global.mq(lg) {
+        padding: 10rem 0;
+    }
 }
 
 .about__text {
     margin-top: 2.4rem;
     text-align: center;
+
+    @include global.mq(lg) {
+        margin-top: 2.9rem;
+        font-size: 1.8rem;
+    }
 }

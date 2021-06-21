@@ -6,6 +6,10 @@
 .trial__contents {
     background: global.$color-bg_bk;
     padding: 4rem 0;
+
+    @include global.mq(lg) {
+        padding: 6rem 0;
+    }
 }
 
 .trial__text {
@@ -13,4 +17,8 @@
     font-weight: 700;
     color: global.$color-text_wh;
     text-align: center;
+
+    @include global.mq(lg) {
+        font-size: 3.6rem;
+    }
 }

@@ -6,26 +6,61 @@
 .fv__contents {
     background: global.$color-bg_pl;
     padding: 11.2rem 0 6rem;
+
+    @include global.mq(lg) {
+        padding: 18.9rem 0 11.3rem;
+        position: relative;
+    }
+}
+
+.fv__text {
+    @include global.mq(lg) {
+        width: calc(677 / 1200 * 100%);
+    }
 }
 
 .fv__text_title {
     font-size: 8vw;
     font-weight: 700;
+
+    @include global.mq(lg) {
+        font-size: 4.3vw;
+        line-height: 1.45;
+    }
 }
 
 .fv__text_lead {
     margin-top: 1.6rem;
+
+    @include global.mq(lg) {
+        width: 82%;
+        font-size: 1.8rem;
+        line-height: 1.777;
+        margin-top: 2.4rem;
+    }
 }
 
 .fv__img {
     width: calc(305 / 335 * 100%); 
     margin: -1.6rem auto;
+
+    @include global.mq(lg) {
+        width: 35.764%;
+        margin: 0;
+        position: absolute;
+        top: 15%;
+        right: calc(113 / 1440 * 100%);
+    }
 }
 
 .fv__btn {
     text-align: center;
 
     @include global.mq(md) {
+        display: flex;
+    }
+
+    @include global.mq(lg) {
         display: flex;
     }
 }

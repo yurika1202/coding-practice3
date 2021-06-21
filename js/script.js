@@ -18,7 +18,7 @@ $(".sp__nav_btn").click(function (e) {
     return false;
 });
     
-$(".nav__items a").click(function () {
+$(".nav__items_sp a").click(function () {
     $(".sp__nav_btn").removeClass('_open');
     $(".nav__btn_text").removeClass('_open');
     $(".open__nav").removeClass('__panel-active');
