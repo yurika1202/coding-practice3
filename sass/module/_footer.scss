@@ -48,6 +48,11 @@
 .btn_share {
     width: 2.4rem;
     height: 2.4rem;
+    transition: all .5s;
+
+    &:hover {
+        opacity: 0.5;
+    }
 }
 
 .footer__wrapper {
@@ -65,6 +70,11 @@
     color: global.$color-text_wh;
     letter-spacing: 0.03em;
     line-height: 1;
+    transition: all .5s;
+
+    &:hover {
+        opacity: 0.5;
+    }
 }
 
 .footer__nav_lists {
@@ -89,6 +99,11 @@
         color: global.$color-text_wh;
         font-size: 1.2rem;
         font-weight: 700;
+        transition: all .5s;
+
+        &:hover {
+            opacity: 0.5;
+        }    
         
         @include global.mq(lg) {
             font-size: 1.4rem;
