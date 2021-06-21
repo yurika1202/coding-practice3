@@ -30,7 +30,7 @@
 }
 
 .nav__item_sp {
-    padding-left: 4rem;
+    padding-left: 4.2rem;
     position: relative;
 
     &::before {
@@ -41,12 +41,12 @@
         border-radius: 1px;
         position: absolute;
         top: 50%;
-        left: 0;
+        left: 0.5rem;
         transform: translateY(-50%) rotate(45deg);
     }
 
     &:not(:first-child) {
-        margin-top: 4rem;
+        margin-top: 3.5rem;
     }
 
     a {

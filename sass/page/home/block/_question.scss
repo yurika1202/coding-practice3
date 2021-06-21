@@ -5,20 +5,20 @@
 --------------------------------- */
 .question {
     background: global.$color-bg_gy;
-    padding: 6rem 0 7.2rem;
+    padding: 4.3rem 0 6.5rem;
 
     @include global.mq(lg) {
-        padding: 10rem 0;
+        padding: 8rem 0 10.5rem;
     }
 }
 
 .question__container {
     width: calc(335 / 375 * 100%);
     max-width: global.$layout-width-inner;
-    margin: 4rem auto 0;
+    margin: 3rem auto 0;
 
     @include global.mq(lg) {
-        margin: 6rem auto 0;
+        margin: 5rem auto 0;
         width: calc(920 / 1440 * 100%);
     }
 }
@@ -26,6 +26,10 @@
 .question__wrapper {
     &:not(:first-child) {
         margin-top: 2.4rem;
+
+        @include global.mq(lg) {
+            margin-top: 2.7rem;
+        }
     }
 }
 
@@ -37,7 +41,7 @@
     border-radius: 4px;
 
     @include global.mq(lg) {
-        padding: 2.2rem 2.4rem;
+        padding: 2rem 2.4rem 1.6rem;
     }
 }
 
@@ -74,8 +78,8 @@
     margin-top: 1.6rem;
 
     @include global.mq(lg) {
-        padding: 2.1rem 2.5rem 2.2rem;
-        margin-top: 1.4rem;
+        padding: 2.7rem 2.5rem 2.2rem;
+        margin-top: 1rem;
     }
 }
 

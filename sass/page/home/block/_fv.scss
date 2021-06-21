@@ -25,7 +25,8 @@
 
     @include global.mq(lg) {
         font-size: 4.3vw;
-        line-height: 1.45;
+        line-height: 1.4;
+        letter-spacing: -0.03em;
     }
 }
 
@@ -41,15 +42,16 @@
 }
 
 .fv__img {
-    width: calc(305 / 335 * 100%); 
-    margin: -1.6rem auto;
+    width: calc(308 / 335 * 100%); 
+    margin: -2.5rem auto;
+    padding-right: .6rem;
 
     @include global.mq(lg) {
-        width: 35.764%;
+        width: 35.5%;
         margin: 0;
         position: absolute;
-        top: 15%;
-        right: calc(113 / 1440 * 100%);
+        top: 16.5%;
+        right: calc(135 / 1440 * 100%);
     }
 }
 

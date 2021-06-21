@@ -4,7 +4,7 @@
 /* users
 --------------------------------- */
 .users {
-    padding: 6rem 0;
+    padding: 5.6rem 0;
 
     @include global.mq(lg) {
         padding: 10rem 0;
@@ -12,14 +12,14 @@
 }
 
 .users__items {
-    margin-top: 2.4rem;
+    margin-top: 1.2rem;
     margin-bottom: -1.249rem;
     display: flex;
     flex-wrap: wrap;
 
     @include global.mq(lg) {
-        margin-top: 4rem;
-        margin-bottom: -5rem;
+        width: 81%;
+        margin: 3rem auto -5rem;
     }
 }
 

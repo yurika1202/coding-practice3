@@ -55,7 +55,7 @@ a {
 .btn {
     display: block;
     width: 30rem;
-    padding: 1.8rem 0 2.2rem;
+    padding: 1.8rem 0;
     border-radius: 999px;
     border: 2px solid global.$color-main;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.24);
@@ -70,7 +70,7 @@ a {
     @include global.mq(lg) {
         width: 40rem;
         font-size: 2.4rem;
-        padding: 2.3rem 0;
+        padding: 1.6rem 0;
     }
 
     &._pl {
@@ -107,7 +107,7 @@ a {
         margin-top: 2.4rem;
 
         @include global.mq(lg) {
-            margin-top: 4rem;
+            margin-top: 4.5rem;
         }
     }
 
@@ -116,25 +116,32 @@ a {
             box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.24);
             top: -.4rem;
         }
+
+        @include global.mq(lg) {
+            margin-top: 3rem;
+            padding: 2rem 0;
+        }
     }
 
     &._fv-btn {
+        margin-top: 1.6rem;
+
         &:not(:first-of-type) {
             margin-top: 3.2rem;
 
             @include global.mq(md) {
-                margin-top: 0;
+                margin-top: 1.6rem;
             }
 
             @include global.mq(lg) {
-                margin-top: 3.3rem;
+                margin-top: 3.8rem;
                 margin-left: 3.7rem;
             }
         }
 
         @include global.mq(lg) {
             width: 25rem;
-            margin: 3.3rem 0 0;
+            margin: 3.8rem 0 0;
             font-size: 1.8rem;
         }
     }
@@ -152,6 +159,7 @@ a {
     border: 2px solid global.$color-main;
     border-radius: 999px;
     margin-left: 1.4rem;
+    margin-right: 1.4rem;
     position: relative;
     top: 0;
     
@@ -175,16 +183,25 @@ a {
     line-height: 1;
 
     &._plan-wh {
+        width: 98%;
+        padding: 1.2rem 0 1rem;
         border: 2px solid global.$color-text_bk;
         background: global.$color-bg;
-        margin-top: 1.9rem;
+        margin-top: 1.3rem;
         transition: all .5s;
 
         &:hover {
             background: global.$color-bg_bk;
             color: global.$color-text_wh;
             border: 2px solid global.$color-text_wh;
-        }    
+        } 
+        
+        @include global.mq(lg) {
+            width: 100%;
+            font-size: 1.8rem;
+            padding: 1.7rem 0 1.5rem;
+            margin-top: 1.9rem;
+        }
     }
 
     &._plan-pl {
@@ -197,19 +214,31 @@ a {
         &:hover {
             background: global.$color-bg;
             color: global.$color-main;
-        }    
+        }   
+        
+        @include global.mq(lg) {
+            font-size: 1.8rem;
+            margin-top: 2.8rem;
+        }
     }
 }
 
 .btn-area__btn_wh {
     border: 2px solid global.$color-text_bk;
     background: global.$color-bg;
+    padding: 1.3rem 0;
+    width: 98%;
     margin-top: 0;
     transition: all .5s;
 
     &:hover {
         background: global.$color-bg_bk;
         color: global.$color-text_wh;
+    }
+
+    @include global.mq(lg) {
+        width: 100%;
+        font-size: 1.8rem;
     }
 }
 
@@ -223,19 +252,26 @@ a {
         background: global.$color-bg;
         color: global.$color-main;
     }
+
+    @include global.mq(lg) {
+        font-size: 1.8rem;
+    }
 }
 
 .section-title {
     text-align: center;
-    padding-top: 3.4rem;
+    padding-top: 3.3rem;
     position: relative;
     font-size: 3rem;
     font-weight: 700; 
-    color: global.$color-text_pl;   
+    color: global.$color-text_pl; 
+    letter-spacing: 0.03em;
+    line-height: 1.5;  
 
     @include global.mq(lg) {
         font-size: 4.8rem;
-        padding-top: 5.4rem;
+        padding-top: 4.15rem;
+        letter-spacing: 0.05em;
     }
 }
 
@@ -246,6 +282,7 @@ a {
 .section-title_en {
     font: 700 2.2rem/1 global.$font-family-awesome_en;
     color: global.$color-accent;
+    letter-spacing: 0.06em;
     width: 100%;
     position: absolute;
     top: 0;
@@ -254,5 +291,14 @@ a {
 
     @include global.mq(lg) {
         font-size: 3.6rem;
+        letter-spacing: 0.07em;
+    }
+}
+
+.is-lg {
+    display: none;
+
+    @include global.mq(lg) {
+        display: block;
     }
 }

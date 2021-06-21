@@ -17,8 +17,10 @@
     font-weight: 700;
     color: global.$color-text_wh;
     text-align: center;
+    letter-spacing: 0.02em;
 
     @include global.mq(lg) {
         font-size: 3.6rem;
+        line-height: 1.5;
     }
 }
