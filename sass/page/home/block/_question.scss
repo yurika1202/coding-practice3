@@ -6,10 +6,21 @@
 .question {
     background: global.$color-bg_gy;
     padding: 6rem 0 7.2rem;
+
+    @include global.mq(lg) {
+        padding: 10rem 0;
+    }
 }
 
 .question__container {
-    margin-top: 4rem;
+    width: calc(335 / 375 * 100%);
+    max-width: global.$layout-width-inner;
+    margin: 4rem auto 0;
+
+    @include global.mq(lg) {
+        margin: 6rem auto 0;
+        width: calc(920 / 1440 * 100%);
+    }
 }
 
 .question__wrapper {
@@ -24,6 +35,10 @@
     background: global.$color-main;
     padding: 1rem 1.5rem;
     border-radius: 4px;
+
+    @include global.mq(lg) {
+        padding: 2.2rem 2.4rem;
+    }
 }
 
 .question__summary::-webkit-details-marker {
@@ -46,6 +61,10 @@
         top: 0;
         left: 0;
     }
+
+    @include global.mq(lg) {
+        font-size: 1.8rem;
+    }
 }
 
 .question__answer {
@@ -53,6 +72,11 @@
     padding: 1.2rem 1.6rem;
     border-radius: 4px;
     margin-top: 1.6rem;
+
+    @include global.mq(lg) {
+        padding: 2.1rem 2.5rem 2.2rem;
+        margin-top: 1.4rem;
+    }
 }
 
 .answer__text {
@@ -67,6 +91,11 @@
         position: absolute;
         top: 0;
         left: 0;
+    }
+
+    @include global.mq(lg) {
+        padding-left: 3.1rem;
+        font-size: 1.8rem;
     }
 }
 

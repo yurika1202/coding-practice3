@@ -5,6 +5,10 @@
 --------------------------------- */
 .users {
     padding: 6rem 0;
+
+    @include global.mq(lg) {
+        padding: 10rem 0;
+    }
 }
 
 .users__items {
@@ -12,6 +16,11 @@
     margin-bottom: -1.249rem;
     display: flex;
     flex-wrap: wrap;
+
+    @include global.mq(lg) {
+        margin-top: 4rem;
+        margin-bottom: -5rem;
+    }
 }
 
 .users_item {
@@ -20,5 +29,14 @@
 
     &:not(:nth-child(4n)) {
         margin-right: 1.1rem;
+
+        @include global.mq(lg) {
+            margin-right: 4rem;
+        }
+    }
+
+    @include global.mq(lg) {
+        width: calc(100% / 4 - 4rem * 3 / 4);
+        margin-bottom: 5rem;    
     }
 }

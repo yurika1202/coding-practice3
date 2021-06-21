@@ -7,6 +7,25 @@
     background: global.$color-bg_footer;
     padding: 4rem 0;
     text-align: center;
+
+    @include global.mq(lg) {
+        padding: 2.7rem 0;
+    }
+}
+
+.footer__contents {
+    @include global.mq(lg) {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+}
+
+.footer__share {
+    @include global.mq(lg) {
+        padding-bottom: 1.2rem;
+    }
 }
 
 .footer__share_title {
@@ -33,6 +52,11 @@
 
 .footer__wrapper {
     margin-top: 3.2rem;
+
+    @include global.mq(lg) {
+        margin-top: 0;
+        text-align: left;
+    }
 }
 
 .footer__logo {
@@ -45,22 +69,40 @@
 
 .footer__nav_lists {
     margin-top: 1.4rem;
+
+    @include global.mq(lg) {
+        display: flex;
+    }
 }
 
 .footer__nav_list {
     &:not(:first-child) {
         margin-top: .8rem;
+
+        @include global.mq(lg) {
+            margin-top: 0rem;
+            margin-left: 1.4rem;
+        }
     }
 
     a {
         color: global.$color-text_wh;
         font-size: 1.2rem;
         font-weight: 700;
+        
+        @include global.mq(lg) {
+            font-size: 1.4rem;
+        }
     }
 }
 
 .footer__copy {
     margin-top: 2.8rem;
+
+    @include global.mq(lg) {
+        margin-top: 1.9rem;
+        display: flex;
+    }
 }
 
 .copy, .credit {
@@ -71,4 +113,9 @@
 
 .credit {
     margin-top: 1rem;
+
+    @include global.mq(lg) {
+        margin-top: 0;
+        margin-left: 1.4rem;
+    }
 }

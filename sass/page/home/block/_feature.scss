@@ -6,10 +6,26 @@
 .feature {
     background: global.$color-bg_gy;
     padding: 6rem 0;
+
+    @include global.mq(lg) {
+        padding: 10rem 0;
+    }
+}
+
+.feature__inner_lg {
+    @include global.mq(lg) {
+        width: calc(1200 / 1440 * 100%);
+        margin: 0 auto;
+        max-width: 1200px;
+    }
 }
 
 .feature__lists {
     margin-top: 4rem;
+
+    @include global.mq(lg) {
+        margin-top: 10.2rem;
+    }
 }
 
 .feature__list {
@@ -18,11 +34,64 @@
     &:not(:first-child) {
         margin-top: 6rem;
     }
+
+    &:nth-of-type(1) {
+        @include global.mq(lg) {
+            padding-top: 15.4rem;
+        }
+    }
+
+    &:nth-of-type(2) {
+        @include global.mq(lg) {
+            margin-top: 15.3rem;
+            padding-bottom: 17.8rem;
+            display: flex;
+            flex-direction: row-reverse;
+        }
+    }
+
+    &:nth-of-type(3) {
+        @include global.mq(lg) {
+            margin-top: 8.5rem;
+        }
+    }
+
+    @include global.mq(lg) {
+        position: relative;
+    }
 }
 
 .feature__list_img {
     width: calc(280 / 335 * 100%);
     margin: 0 auto -9rem;
+
+    @include global.mq(lg) {
+        width: calc(520 / 1200 * 100%);
+        position: absolute;
+        top: 0;
+        right: 3rem;
+        z-index: 2;
+    }
+
+    &._lg2 {
+        @include global.mq(lg) {
+            width: calc(520 / 1200 * 100%);
+            position: absolute;
+            top: 6%;
+            left: -52%;
+            z-index: 2;    
+        }
+    }
+
+    &._lg3 {
+        @include global.mq(lg) {
+            width: calc(520 / 1200 * 100%);
+            position: absolute;
+            top: -18rem;
+            right: 1rem;
+            z-index: 2;    
+        }
+    }
 }
 
 .feature__list_text {
@@ -30,6 +99,18 @@
     background: global.$color-bg;
     border-radius: 20px;
 
+    @include global.mq(lg) {
+        padding: 6.5rem 12.4rem 6.4rem 4rem;
+        width: 74.2rem;
+    }
+
+    &._lg-pd2 {
+        @include global.mq(lg) {
+            padding: 6.5rem 1.9rem 6.4rem 4rem;
+            width: 61.833%;
+            min-width: 62rem;
+        }    
+    }
 }
 
 .feature__list_title {
@@ -46,10 +127,32 @@
         position: absolute;
         top: 0;
         left: 0;
+
+        @include global.mq(lg) {
+            font-size: 7.2rem;
+        }
+    }
+
+    @include global.mq(lg) {
+        padding-top: 0;
+        padding-left: 10.8rem;
+        font-size: 2.5vw;
     }
 }
 
 .feature__list_message {
     margin-top: .8rem;
     font-size: 1.4rem;
+
+    @include global.mq(lg) {
+        margin-top: 1.7rem;
+        font-size: 1.6rem; 
+        padding-left: 10.8rem;   
+    }
+
+    &._lg_pdr {
+        @include global.mq(lg) {
+            padding-right: 14%;   
+        }
+    }
 }

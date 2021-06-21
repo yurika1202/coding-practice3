@@ -9,6 +9,10 @@
     background: global.$color-bg;
     position: fixed;
     z-index: 100;
+
+    @include global.mq(lg) {
+        height: 7.2rem;
+    }
 }
 
 ._header-inner {
@@ -67,6 +71,10 @@
                 transform: rotate(-45deg);
             }
         }
+    }
+
+    @include global.mq(lg) {
+        display: none;
     }
 }
 
