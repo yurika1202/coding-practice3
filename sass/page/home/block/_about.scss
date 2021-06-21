@@ -12,11 +12,12 @@
 }
 
 .about__text {
-    margin-top: 2.4rem;
+    margin-top: 2rem;
     text-align: center;
 
     @include global.mq(lg) {
-        margin-top: 2.9rem;
+        margin-top: 1.7rem;
         font-size: 1.8rem;
+        line-height: 1.8;
     }
 }

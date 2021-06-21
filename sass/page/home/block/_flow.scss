@@ -5,7 +5,7 @@
 --------------------------------- */
 .flow {
     background: global.$color-bg_gy;
-    padding: 6rem 0;
+    padding: 6rem 0 6.5rem;
 
     @include global.mq(lg) {
         padding: 10rem 0 8rem;
@@ -13,10 +13,12 @@
 }
 
 .flow__lists {
-    margin-top: 6.4rem;
+    margin-top: 5.4rem;
 
     @include global.mq(lg) {
-        margin-top: 5.5rem;
+        width: 90%;
+        margin: 4.5rem auto 0;
+        padding-left: 1.6rem;
         display: flex;
         justify-content: space-between;
     }
@@ -26,7 +28,7 @@
     counter-increment: number_flow;
 
     &:not(:first-child) {
-        margin-top: 8.4rem;
+        margin-top: 8.7rem;
 
         @include global.mq(lg) {
             margin-top: 0;
@@ -49,7 +51,7 @@
     }
 
     @include global.mq(lg) {
-        width: calc(280 / 1200 * 100%);
+        width: calc(308/ 1200 * 100%);
         position: relative;
     }
 }
@@ -57,34 +59,41 @@
 .flow__list_img {
     background: global.$color-bg_pl;
     border-radius: 30px;
-    padding: 2.249rem 6.8rem 2.045rem;
+    padding: 0 6.8rem;
     position: relative;
 
     @include global.mq(lg) {
-        padding: 1rem 4rem;
+        padding: 0.3rem 4rem;
     }
 
     img {
+        width: 96%;
         margin: 0 auto;
     }
 
     &::before {
         content: counter(number_flow, decimal-leading-zero);
-        font: 4.2rem/1 global.$font-family-awesome_en;
+        font: 5.4rem/1 global.$font-family-awesome_en;
         color: global.$color-text_pl;
-        letter-spacing: 0.1em;
+        letter-spacing: 0.08em;
         position: absolute;
-        top: -2rem;
+        top: -3rem;
         left: 0;
 
         @include global.mq(lg) {
             font-size: 4.8rem;
+            top: -2rem;
+            left: -1.7rem;
         }
     }
 }
 
 .flow__list_text {
     margin-top: 1.6rem;
+
+    @include global.mq(lg) {
+        margin-top: 1.9rem;
+    }
 }
 
 .flow__list_title {
@@ -99,6 +108,10 @@
 }
 
 .flow__list_message {
-    margin-top: .8rem;
+    margin-top: .95rem;
     line-height: 1.8;
+
+    @include global.mq(lg) {
+       margin-top: 1.5rem; 
+    }
 }

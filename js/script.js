@@ -1,10 +1,10 @@
 /* top-scroll
 ---------------------------- */
-$(function() {
-    var pageTop = $('.logo_totop');
-    pageTop.click(function() {
-      $("body, html").animate({ scrollTop: 0 }, 500);
-    });
+$('.logo_totop').click(function () {
+    $('body,html').animate({
+        scrollTop: 0
+    }, 500);
+    return false;
 });
 
 /* header-nav
