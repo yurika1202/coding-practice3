@@ -5,7 +5,6 @@ ID:demo3 PASS:sample
 
 ## memo
 制作時間 : 約14時間  
-使用スキル
 * HTML/CSS
 * Sass
 * jQuery
