@@ -102,7 +102,7 @@
     text-align: center;
 
     @include global.mq(lg) {
-        padding: 4.7rem 1.3rem 4.1rem;
+        padding: 4.3rem 1.3rem 4rem;
     }
 }
 
@@ -159,7 +159,7 @@
     font-size: 1.5rem;
 
     @include global.mq(lg) {
-        margin-top: 1.7rem;
+        margin-top: 1rem;
         font-size: 2.2rem;
     }
 
